@@ -13,6 +13,7 @@ public class FileManager {
 		String line = "";
 		int counter = 0;
 		try{
+			
 			file = new FileReader(root);
 			reader = new BufferedReader(file);
 			line = reader.readLine();
@@ -68,6 +69,40 @@ public class FileManager {
 		}
 		return result;
 		
+	}
+	
+	/*
+	 * Funcion que me permite tomar un archivo .txt y pasarlo a sentencias
+	 * de prolog.
+	 * Entradas: un archivo .txt
+	 * Salidas: un archivo .pl
+	 */
+	public void txt_to_pl(String origin, String destiny){
+		FileReader file = null;
+		BufferedReader reader = null;
+		PrintWriter writer = null;
+		String temp = "";
+		//String temp2 = "";
+		try {
+			file = new FileReader(origin);
+			reader = new BufferedReader(file);
+			writer = new PrintWriter(destiny+".pl", "UTF-8");
+			temp = reader.readLine();
+			while(temp != null){
+				writer.println(destiny+"("+temp+").");
+				temp = reader.readLine();
+			}
+			file.close();
+			reader.close();
+			writer.close();
+		} catch (IOException e) {
+			e.getMessage();
+		}
+	}
+	
+	public static void main(String[] args){
+		FileManager file = new FileManager();
+		file.txt_to_pl("verbos.txt", "asb");
 	}
 
 }
