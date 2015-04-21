@@ -40,6 +40,7 @@ public class FileManager {
 		FileReader file = null;
 		BufferedReader reader = null;
 		int counter = 1;
+		String result = "";
 		if(line < 1){
 			result = "Sorry, index must be greater than cero";
 		}
