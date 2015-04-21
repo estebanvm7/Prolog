@@ -39,7 +39,6 @@ public class FileManager {
 	public String getLine(String root, int line){
 		FileReader file = null;
 		BufferedReader reader = null;
-		String result = "yolo";
 		int counter = 1;
 		if(line < 1){
 			result = "Sorry, index must be greater than cero";
