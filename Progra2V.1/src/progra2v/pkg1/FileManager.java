@@ -99,10 +99,4 @@ public class FileManager {
 			e.getMessage();
 		}
 	}
-	
-	public static void main(String[] args){
-		FileManager file = new FileManager();
-		file.txt_to_pl("verbos.txt", "asb");
-	}
-
 }
