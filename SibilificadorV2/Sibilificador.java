@@ -1,4 +1,11 @@
 //package sibilificador; 
+/*
+HERNÁNDEZ-FIGUEROA, Zenón; CARRERAS-RIUDAVETS, Francisco J.; RODRÍGUEZ-RODRÍGUEZ,
+Gustavo. Automatic syllabification for Spanish using lemmatization and derivation 
+to solve the prefix’s prominence issue. Expert Systems with Applications, 2013, 
+vol. 40, no 17, p. 7122-7131. Disponible en http://tip.iatext.ulpgc.es
+*/
+
 import java.util.*;
 
 
