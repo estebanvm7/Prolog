@@ -473,11 +473,5 @@ public class Sibilificador {
 		}
             }
         }
-    public static void main(String[] args){
-        String valor = "áísicióó";
-        Sibilificador s = new Sibilificador();
-        System.out.println(s.contarTildes(valor));		
-    }
-    
 }
 
