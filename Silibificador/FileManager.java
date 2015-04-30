@@ -82,14 +82,20 @@ public class FileManager {
 		BufferedReader reader = null;
 		PrintWriter writer = null;
 		String temp = "";
-		//String temp2 = "";
+		//String gender = "";
+		int syllable = 0;
 		try {
 			file = new FileReader(origin);
 			reader = new BufferedReader(file);
 			writer = new PrintWriter(destiny+".pl", "UTF-8");
 			temp = reader.readLine();
+			String[] spliter = temp.split(" ");
+			//crear instancia se silibificador y aplicar
+			//numerosilabas sobre temp y asignarlo a syllable
+			
+			//faltaria detectar el genero y asignarlo a gender
 			while(temp != null){
-				writer.println(destiny+"("+temp+").");
+				writer.println(destiny+"(G,N) --> ["+spliter[0]+"], {G="+spliter[1]+"}, {N is "+syllable+"}.");
 				temp = reader.readLine();
 			}
 			file.close();
