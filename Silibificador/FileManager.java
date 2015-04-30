@@ -89,12 +89,13 @@ public class FileManager {
 			reader = new BufferedReader(file);
 			writer = new PrintWriter(destiny+".pl", "UTF-8");
 			temp = reader.readLine();
-			String[] spliter = temp.split(" ");
+			String[] spliter = new String[2];
 			//crear instancia se silibificador y aplicar
 			//numerosilabas sobre temp y asignarlo a syllable
 			
 			//faltaria detectar el genero y asignarlo a gender
 			while(temp != null){
+				spliter = temp.split(" ");
 				writer.println(destiny+"(G,N) --> ["+spliter[0]+"], {G="+spliter[1]+"}, {N is "+syllable+"}.");
 				temp = reader.readLine();
 			}
