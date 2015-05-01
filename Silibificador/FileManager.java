@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.*;
 
 public class FileManager {
 	
@@ -64,7 +65,7 @@ public class FileManager {
 				file.close();
 				reader.close();
 			} catch (IOException e) {
-				e.getMessage();
+				System.out.println(e.getMessage());
 			}
 		}
 		return result;
@@ -104,14 +105,52 @@ public class FileManager {
 			}
 			file.close();
 			reader.close();
+			writer.flush();
 			writer.close();
 		} catch (IOException e) {
-			e.getMessage();
+			System.out.println(e.getMessage());
+		}
+	}
+	
+	/*
+	 * funcion que toma varios archivos y los une en uno solo
+	 */
+	public void createWholePl(List<FileReader> list, String name){
+		String temp = "";
+		PrintWriter writer = null;
+		BufferedReader reader = null;
+		try{
+			writer = new PrintWriter(name+".pl", "UTF-8");
+			for (FileReader i: list){
+				reader = new BufferedReader(i);
+				temp = reader.readLine();
+				while(temp != null){
+					writer.println(temp);
+					temp = reader.readLine();
+				}
+				i.close();
+				
+			}
+			writer.flush();
+			writer.close();
+		}catch (IOException e){
+			System.out.println(e.getMessage());
 		}
 	}
 	
 	/*public static void main(String[] args){
-		FileManager f = new FileManager();
-		f.txt_to_pl("articulos.txt", "articulo");
+		FileManager file = new FileManager();
+		//f.txt_to_pl("articulos.txt", "articulo");
+		FileReader f1 = null,f2 = null,f3 = null;
+		try {
+			f1 = new FileReader("articulo.pl");
+			f2 = new FileReader("articulo.pl");
+			f3 = new FileReader("articulo.pl");
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+		List <FileReader> list = new ArrayList<FileReader>();
+		list.add(f1);list.add(f2);list.add(f3);
+		file.createWholePl(list, "main");
 	}*/
 }
