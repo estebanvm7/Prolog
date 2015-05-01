@@ -28,3 +28,12 @@ o una luciérnaga? </br>
 ---------------------------
 
 Falta por hacer
+
+Puntos Extra
+------------
+
+**Haiku Gustavo** </br>
+Cielo perlado: </br>
+¿Dioses omnipotentes, </br>
+o bolas de gas? </br>
+
