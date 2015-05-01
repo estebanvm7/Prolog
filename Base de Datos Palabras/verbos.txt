@@ -1,100 +1,100 @@
-aceptar m s
-aceptó m s
-acepta f s
-aceptamos m p
-permitir m s
-permito m s
-permitimos m p
-permite m s
-dejar m s
-dejo m s
-dejamos m p
-dejaras m p
-dejarás m p
-pregunta m s
-preguntarás m s
-preguntaremos m p
-preguntó m s
-prestar m s
-preto m s
-prestamos m p
-romper m s
-rompió m s
-romperemos m p
-rompimos m p
-traer m s
-trajo m s
-trajimos m p
-traigo m s
-poder m s
-podimos m p
-puedo m s
-podrás m s
-podimos m s
-podrá m s
-cancelar m s
-cancelo m s
-canceló m s
-cancelamos m p
-cancelaremos m p
-cancelaríamos m p
-cambiar m s
-cambiamos m p
-cambió m s
-limpiar m s
-limpio m s
-limpiaremos m p
-limpiamos m p
-limpiaste m s
-contar m s
-contaba m s
-contabamos m p
-contaremos m p
-contó m s
-cuentas m s
-cerrer m s
-cerró m s
-cerraría m s
-organizar m s
-organizaba m s
-llenar m s
-llenaria m s
-encontrar m s
-encontraba m s
-encontraría m s
-explicar m s
-explicaba m s
-explicado m s
-correr m s
-correríamos m p
-corrimos m p
-corres m s
-correrás m s
-compilar m s
-compilaba m s
-ser m s
-fue m s
-será m s
-es m s
-estar m s
-estará m s
-estuvo m s
-estuvieramos m s
-pagar m s
-pagaremos m p
-pagamos m s
-pagé m s
-cantar m s
-cantaré  m s
-cantó m s
-huir m s
-huiría m s
-dormir m s
-dormiamos m p
-dormido m s
-aprender m s
-aprendió m s
-aprenderemos m p
-escuchar m s
-escuchado m s
-vivir m s
+aceptar s
+aceptó s
+acepta s
+aceptamos p
+permitir s
+permito s
+permitimos p
+permite s
+dejar s
+dejo s
+dejamos p
+dejaras p
+dejarás p
+pregunta s
+preguntarás s
+preguntaremos p
+preguntó s
+prestar s
+preto s
+prestamos p
+romper s
+rompió s
+romperemos p
+rompimos p
+traer s
+trajo s
+trajimos p
+traigo s
+poder s
+pudimos p
+puedo s
+podrás s
+pudimos p
+podrá s
+cancelar s
+cancelo s
+canceló s
+cancelamos p
+cancelaremos p
+cancelaríamos p
+cambiar s
+cambiamos p
+cambió s
+limpiar s
+limpio s
+limpiaremos p
+limpiamos p
+limpiaste s
+contar s
+contaba s
+contabamos p
+contaremos p
+contó s
+cuentas s
+cerrer s
+cerró s
+cerraría s
+organizar s
+organizaba s
+llenar s
+llenaria s
+encontrar s
+encontraba s
+encontraría s
+explicar s
+explicaba s
+explicado s
+correr s
+correríamos p
+corrimos p
+corres s
+correrás s
+compilar s
+compilaba s
+ser s
+fue s
+será s
+es s
+estar s
+estará s
+estuvo s
+estuviéramos p
+pagar s
+pagaremos p
+pagamos p
+pagé s
+cantar s
+cantaré s
+cantó s
+huir s
+huiría s
+dormir s
+dormiamos p
+dormido s
+aprender s
+aprendió s
+aprenderemos p
+escuchar s
+escuchado s
+vivir s
