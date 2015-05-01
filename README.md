@@ -49,4 +49,4 @@ luz de esperanza </br>
 **Haiku Esteban** </br>
 The morning sunshine </br>
 it moves and its gone again </br>
-blind by te dark light </br>
+blind by the dark light </br>
