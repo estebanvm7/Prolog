@@ -37,3 +37,9 @@ Cielo perlado: </br>
 ¿Dioses omnipotentes, </br>
 o bolas de gas? </br>
 
+------------
+
+**Haiku Mauricio** </br>
+Camino oscuro </br>
+sueños sin almohada </br>
+luz de esperanza </br>
