@@ -1,2 +1,2 @@
-oracion --> pronombre(Gp, Mp, Tp), verbo(Gv, Mv, Tv), sustantivo(Gs, Ms, Ts), {N is Mp + Mv + Ms}, {N >= 5},{9 >= N }, 
-  {Gp = Gv}, {Gv = Gs}, {Tp = Tv}, {Tv = Ts}.
+oracion --> pronombre(Gp, Mp, Tp), verbo(Mv, Tv), sustantivo(Gs, Ms, Ts), {N is Mp + Mv + Ms}, {N >= 5},{9 >= N }, 
+  {Gp = Gs}, {Tp = Tv}, {Tv = Ts}.
