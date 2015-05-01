@@ -1,0 +1,1 @@
+oracion --> verbo(Gv, Mv, Tv), articulo(Ga, Ma, Ta), adjetivo(Gad, Mad, Tad), {Gv = Ga= Gad}, {Tv = Ta, Tad}, {5<= N <=9}.

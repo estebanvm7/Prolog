@@ -1,0 +1,2 @@
+oracion --> articulo(Ga, Ma, Ta), sustantivo(Gs, Ms, Ts), verbo(Mv,Tv), {Ga = Gs}, {Ta = Ts = Tv}, {5 <= N <= 9}.
+

@@ -1,0 +1,1 @@
+oracion --> verbo(Gv, Mv, Tv), sustantivo(Gs, Ms, Ts), N is Mv + Ms,  {5<= N <=9}, {Gv = Gs}, {Tv = Ts}.

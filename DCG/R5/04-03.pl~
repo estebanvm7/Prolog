@@ -1,0 +1,1 @@
+oracion --> pronombre(Gp, Mp, Tp), verbo(Gv, Mv, Tv), N is Mp + Mv, {5 <= N <= 9}, {Gp = Gv}, {Tp = Tv}.
