@@ -93,10 +93,13 @@ public class FileManager {
 			//crear instancia se silibificador y aplicar
 			//numerosilabas sobre temp y asignarlo a syllable
 			
-			//faltaria detectar el genero y asignarlo a gender
+			Sibilificador syll = new Sibilificador();
+			syll.SeparadorDeSilabas();
 			while(temp != null){
 				spliter = temp.split(" ");
-				writer.println(destiny+"(G,N) --> ["+spliter[0]+"], {G="+spliter[1]+"}, {N is "+syllable+"}.");
+				syllable = syll.NumeroSilabas(spliter[0]);
+				writer.println(destiny+"(G,N,T) --> ["+spliter[0]+"], {G="+spliter[1]+"}, {N is "+syllable+"}"
+						+ ", {T="+spliter[2]+"}.");
 				temp = reader.readLine();
 			}
 			file.close();
@@ -106,4 +109,9 @@ public class FileManager {
 			e.getMessage();
 		}
 	}
+	
+	/*public static void main(String[] args){
+		FileManager f = new FileManager();
+		f.txt_to_pl("articulos.txt", "articulo");
+	}*/
 }
