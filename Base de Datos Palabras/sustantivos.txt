@@ -1,100 +1,100 @@
-abuelo
-aceite
-acetona
-acondicionador
-adelaida
-banco de datos
-banda sonora
-barriga
-barvie
-caballero
-cabrón
-café
-caminos
-cantante
-cardozo
-demetrio
-desastre
-descanso
-desorden
-ebrio
-eche
-ecosistema
-eleonora
-elmo
-faustino
-fenero
-festuca gigante
-floresino
-frutos
-gales
-gallina
-gavilán
-gazuza
-gigabyte
-heredia
-hidra
-hisopo
-homero
-imendia
-informalidad
-javier
-juanete
-júpiter
-kamichí
-katterine
-lagunas
-lalo
-latino
-latinoamérica
-macho
-maicol
-manzana
-marcoleta
-mariela
-nabo
-nasa
-nerón
-ñiño
-oliva
-olla
-onofre
-oporto
-padre
-palabra
-palacios
-palomo
-panizo
-pareja
-quetzal
-químico
-rabona
-rana
-rasquin
-receta
-religión
-repositorio
-república
-salsa
-salto
-salud
-sanguesa
-santamaría
-taberna
-tamal
-tatochila
-tejeda
-ugalde
-ulises
-uNICEF
-uribe
-vaca
-valeria
-varilla
-wanda
-wikipedia
-xenofobia
-yalta
-yazmín
-zacarias
-zapata
+abuelo m s
+aceite m s
+acetona m s
+acondicionador m s
+adelaida f s
+banco m s
+banda f s
+barriga f s
+barvie m s
+caballero m s
+cabrón m s
+café m s
+caminos m s
+cantante m s
+cardozo m s
+demetrio m s
+desastre m s
+descanso m s
+desorden m s
+ebrio m s
+eche m s
+ecosistema m s
+eleonora f s
+elmo m s
+faustino m s
+fenero m s
+festuca m s
+floresino m s
+frutos m p
+gales m s
+gallina f s
+gavilán m s
+gazuza m s
+gigabyte m s
+heredia m s
+hidra m s
+hisopo m s
+homero m s
+imendia f s
+informalidad m s
+javier m s
+juanete m s
+júpiter m s
+kamichí m s
+katterine f s
+lagunas f p
+lalo m s
+latino m s
+latinoamérica m s
+macho m s
+maicol m s
+manzana f s
+marcoleta m s
+mariela f s
+nabo m s
+nasa m s
+nerón m s
+ñiño m s
+oliva f s
+olla f s
+onofre m s
+oporto m s
+padre m s
+palabra m s
+palacios m p
+palomo m s
+panizo m s
+pareja m s
+quetzal m s
+químico m s
+rabona f s
+rana f s
+rasquin m s
+receta f s
+religión m s
+repositorio m s
+república f s
+salsa f s
+salto m s
+salud m s
+sanguesa f s
+santamaría m s
+taberna m s
+tamal m s
+tatochila f s
+tejeda m s
+ugalde m s
+ulises m s
+uNICEF m s
+uribe m s
+vaca f s
+valeria f s
+varilla m s
+wanda f s
+wikipedia m s
+xenofobia m s
+yalta m s
+yazmín f s
+zacarias m s
+zapata m s

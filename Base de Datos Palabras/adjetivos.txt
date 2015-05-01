@@ -1,100 +1,100 @@
-abandonado
-abismal
-aburrido
-acelerado
-aclamado
-acogedor
-alegre
-alto
-amargo
-ancho
-arrogante
-asustado
-bello
-blanco
-bonito
-café
-callado
-cansado
-casado
-celestial
-celular
-chocolate
-cuadrada
-crespo
-dañino
-decente
-delicado
-deplorable
-derecho
-deseoso
-destructivo
-distante
-eficaz
-emotivo
-enfermo
-espontáneo
-excelente
-falaz
-falso
-feliz
-feo
-final
-gentil
-genérico
-gratis
-guapo
-hechizo
-heroico
-hipotético
-ilegal
-imparcial
-imposible
-inmune
-joven
-justo
-largo
-legal
-lento
-liso
-macho
-malo
-manso
-móvil
-natural
-negativo
-nuevo
-obsoleto
-oculto
-ordenado
-pasional
-peligroso
-pesado
-quieto
-rajado
-real
-resentido
-rico
-sabio
-satisfactorio
-secreto
-sentido
-suave
-suicida
-sumiso
-superior
-tendido
-total
-trazado
-triste
-tímido
-toxico
-usado
-útil
-vacío
-veloz
-veroz
-viral
-viudo
-voraz
-zurdo
+abandonado m s
+abismal m s
+aburrido m s
+acelerado m s
+aclamado m s
+acogedor m s
+alegre m s
+alto m s
+amargo m s
+ancho m s
+arrogante m s
+asustado m s
+bello m s
+blanco m s
+bonito m s
+café m s
+callado m s
+cansado m s
+casado m s
+celestial m s
+celular  m s
+chocolate m s
+cuadrada f s
+crespo m s
+dañino m s
+decente m s
+delicado m s
+deplorable m s
+derecho m s
+deseoso m s
+destructivo m s
+distante m s
+eficaz m s
+emotivo m s
+enfermo m s
+espontáneo m s
+excelente m s
+falaz m s
+falso m s
+feliz m s
+feo m s
+final m s
+gentil m s
+genérico m s
+gratis m s
+guapo m s
+hechizo m s
+heroico m s
+hipotético m s
+ilegal m s
+imparcial m s
+imposible m s
+inmune m s
+joven m s
+justo m s
+largo m s
+legal m s
+lento m s
+liso m s
+macho m s
+malo m s
+manso m s
+móvil m s
+natural m s
+negativo m s
+nuevo m s
+obsoleto m s
+oculto m s
+ordenado m s
+pasional m s
+peligroso m s
+pesado m s
+quieto m s
+rajado m s
+real m s
+resentido m s
+rico m s
+sabio m s
+satisfactorio m s
+secreto m s
+sentido m s
+suave m s
+suicida m s
+sumiso m s
+superior m s
+tendido m s
+total m s
+trazado m s
+triste m s
+tímido m s
+toxico m s
+usado m s
+útil m s
+vacío m s
+veloz m s
+veroz m s
+viral m s
+viudo m s
+voraz m s
+zurdo m s
