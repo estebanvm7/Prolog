@@ -1,76 +1,76 @@
-adónde
-algo
-alguien
-alguno
-ambas
-ambos
-aquel
-aquello
-conmigo
-consigo
-contigo
-cual
-cualquiera
-cuyo
-cuál
-cuánto
-dónde
-ella
-ellas
-ello
-ellos
-esa
-ese
-eso
-este
-esto
+adónde m s
+algo m s
+alguien m s
+alguno m s
+ambas f p
+ambos m p
+aquel m s
+aquello m s
+conmigo m s
+consigo m s
+contigo m s
+cual m s
+cualquiera m s
+cuyo m s
+cuál m s
+cuánto m s
+dónde m s
+ella f s
+ellas f p
+ello m s
+ellos m p
+esa f s
+ese m s
+eso m s
+este m s
+esto m s
 ge
-la
-las
-le
-les
-lo
-los
-me
-mí
-mía
-mío
-nada
-nadie
-ninguno
-nos
-nosotras
-nosotros
-nuestra
-nuestras
-nuestro
-nuestros
-os
-que
-quien
-quienquiera
-quién
-qué
-se
-suyo
-sí
-tal
-te
-ti
-tuya
-tuyo
-tú
-un
-uno
-unos
-usted
-ustedes
-vos
-vosotras
-vosotros
-vuestra
-vuestro
-yo
-él
-ése
-éste
+la f s
+las f p
+le m s
+les m p
+lo m s
+los m p
+me m s
+mí m s
+mía f s
+mío m s
+nada m s
+nadie m s
+ninguno m s
+nos m s
+nosotras f p
+nosotros m p
+nuestra f s
+nuestras f p
+nuestro m s
+nuestros m p
+os m s
+que m s
+quien m s
+quienquiera m s
+quién m s
+qué m s
+se m s
+suyo m s
+sí m s
+tal m s
+te m s
+ti m s
+tuya f s
+tuyo m s
+tú m s
+un m s
+uno m s
+unos m p
+usted m s
+ustedes m p
+vos m s
+vosotras f p
+vosotros m p
+vuestra f s
+vuestro m s
+yo m s
+él m s
+ése m s
+éste m s
