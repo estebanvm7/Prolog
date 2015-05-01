@@ -43,3 +43,10 @@ o bolas de gas? </br>
 Camino oscuro </br>
 sueños sin almohada </br>
 luz de esperanza </br>
+
+------------
+
+**Haiku Esteban** </br>
+The morning sunshine </br>
+it moves and its gone again </br>
+blind by te dark light </br>
