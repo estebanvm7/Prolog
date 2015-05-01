@@ -1,1 +1,0 @@
-oracion --> pronombre(Gp, Mp, Tp), articulo(Ga, Ma, Ta), sustantivo(Gs, Ms, Ts), N is Mp + Ma + Ms,  {5<= N <=9}, {Gp = Ga = Gs}, {Tp = Ta = Ts}.

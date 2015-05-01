@@ -1,1 +1,0 @@
-oracion --> articulo(Ga, Ma, Ta), sustantivo(Gs, Ms, Ts), adjetivo(Gad, Mad, Tad), N is Ma + Ms + Mad,  {5<= N <=9}, {Ga = Gs = Gad}, {Ta = Ts = Tad}.
