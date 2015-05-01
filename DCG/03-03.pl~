@@ -1,1 +1,0 @@
-oracion --> articulo, sustantivo.
