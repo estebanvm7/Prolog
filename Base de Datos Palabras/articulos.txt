@@ -1,10 +1,10 @@
-el m
-la f
-los m
-las f
-un m
-una f
-unos m
-unas f
-al m
-del m
+el m s
+la f s
+los m p
+las f p
+un m s
+una f s
+unos m p
+unas f p
+al m s
+del m s
