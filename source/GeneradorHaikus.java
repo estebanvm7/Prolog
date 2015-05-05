@@ -7,7 +7,7 @@ import jpl.Query;
 public class GeneradorHaikus {
 
 	
-	private String getOracion(String file, String comando){
+	public String getHaiku(String file, String comando){
 		Query q;
 	    q = new Query("consult('"+file+"')");
 	    /*System.out.println(*/q.hasSolution()/*)*/;
@@ -42,18 +42,11 @@ public class GeneradorHaikus {
 	    return res;
 	}
 	
-	public void printHaiku(String primera, String segunda, String tercera){
-		String pri = getOracion(primera,"haiku");
-		/*String seg = getOracion(segunda,"oracion");
-		String ter = getOracion(tercera,"oracion");
-		String all = pri + '\n' + seg + '\n' + ter;*/
-		System.out.println(pri);
-	}
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		GeneradorHaikus gen = new GeneradorHaikus();
 		//System.out.println(gen.getOracion("01-03.pl"));
 		gen.printHaiku("pruebas.pl", "01-07.pl", "01-03.pl");
-	}
+	}*/
 
 }
