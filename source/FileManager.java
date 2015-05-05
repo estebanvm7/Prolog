@@ -83,24 +83,32 @@ public class FileManager {
 		BufferedReader reader = null;
 		PrintWriter writer = null;
 		String temp = "";
-		//String gender = "";
 		int syllable = 0;
 		try {
 			file = new FileReader(origin);
 			reader = new BufferedReader(file);
 			writer = new PrintWriter(destiny+".pl", "UTF-8");
 			temp = reader.readLine();
-			String[] spliter = new String[2];
-			//crear instancia se silibificador y aplicar
-			//numerosilabas sobre temp y asignarlo a syllable
-			
 			Sibilificador syll = new Sibilificador();
 			syll.SeparadorDeSilabas();
 			while(temp != null){
-				spliter = temp.split(" ");
-				syllable = syll.NumeroSilabas(spliter[0]);
-				writer.println(destiny+"(G,N,T) --> ["+spliter[0]+"], {G="+spliter[1]+"}, {N is "+syllable+"}"
-						+ ", {T="+spliter[2]+"}.");
+				
+				if(origin.contains("verbos")){
+					String[] spliter = new String[1];
+					spliter = temp.split(" ");
+					syllable = syll.NumeroSilabas(spliter[0]);
+					writer.println(destiny+"(M,T) --> ["+spliter[0]+"], {M is "+syllable+"}"+ ", {T="+spliter[1]+"}.");     
+				}
+				else if(origin.contains("preposiciones")){
+					syllable = syll.NumeroSilabas(temp);
+					writer.println(destiny+"(M) --> ["+temp+"], {M is "+syllable+"}."); 
+				}
+				else{   
+					String[] spliter = new String[2];
+					spliter = temp.split(" ");
+					syllable = syll.NumeroSilabas(spliter[0]);
+					writer.println(destiny+"(G,M,T) --> ["+spliter[0]+"], {G="+spliter[1]+"}, {M is "+syllable+"}"+ ", {T="+spliter[2]+"}."); 
+				}
 				temp = reader.readLine();
 			}
 			file.close();
@@ -112,6 +120,32 @@ public class FileManager {
 		}
 	}
 	
+        
+        public String textToPl(String root, String line){
+            String res = "";
+            int syllable = 0;
+            Sibilificador syll = new Sibilificador();
+            syll.SeparadorDeSilabas();
+            if(root.contains("verbos")){
+                String[] spliter = new String[1];
+		spliter = line.split(" ");
+		syllable = syll.NumeroSilabas(spliter[0]);
+                root = root.replace("s.txt", "");
+		return root+"(M,T) --> ["+spliter[0]+"], {M is "+syllable+"}"+ ", {T="+spliter[1]+"}.";     
+            }
+            else if(root.contains("preposiciones")){
+		syllable = syll.NumeroSilabas(line);
+                root = root.replace(".txt", "");
+		return root+"(M) --> ["+line+"], {M is "+syllable+"}."; 
+            }
+            else{   
+		String[] spliter = new String[2];
+		spliter = line.split(" ");
+		syllable = syll.NumeroSilabas(spliter[0]);
+                root = root.replace(".txt", "");
+		return root+"(G,M,T) --> ["+spliter[0]+"], {G="+spliter[1]+"}, {M is "+syllable+"}"+ ", {T="+spliter[2]+"}."; 
+            }
+        }
 	/*
 	 * funcion que toma varios archivos y los une en uno solo
 	 */
@@ -140,17 +174,11 @@ public class FileManager {
 	
 	/*public static void main(String[] args){
 		FileManager file = new FileManager();
-		//f.txt_to_pl("articulos.txt", "articulo");
-		FileReader f1 = null,f2 = null,f3 = null;
-		try {
-			f1 = new FileReader("articulo.pl");
-			f2 = new FileReader("articulo.pl");
-			f3 = new FileReader("articulo.pl");
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
-		}
-		List <FileReader> list = new ArrayList<FileReader>();
-		list.add(f1);list.add(f2);list.add(f3);
-		file.createWholePl(list, "main");
+		file.txt_to_pl("verbos.txt", "verbo");
+		file.txt_to_pl("articulos.txt", "articulos");
+		file.txt_to_pl("pronombres.txt", "pronombres");
+		file.txt_to_pl("sustantivos.txt", "sustantivos");
+		file.txt_to_pl("adjetivos.txt", "adjetivos");
+		file.txt_to_pl("preposiciones.txt", "preposiciones");
 	}*/
 }

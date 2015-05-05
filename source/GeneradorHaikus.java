@@ -17,6 +17,7 @@ public class GeneradorHaikus {
 	    Hashtable[] list;
 	    list = q.allSolutions();
 	    int size = list.length;
+            System.out.println(size);
 	    Random random = new Random();
 	    int ran = random.nextInt(size)+1;
 	    while (q.hasMoreElements()) {	
