@@ -1,11 +1,3 @@
-//package sibilificador; 
-/*
-HERNÁNDEZ-FIGUEROA, Zenón; CARRERAS-RIUDAVETS, Francisco J.; RODRÍGUEZ-RODRÍGUEZ,
-Gustavo. Automatic syllabification for Spanish using lemmatization and derivation 
-to solve the prefix’s prominence issue. Expert Systems with Applications, 2013, 
-vol. 40, no 17, p. 7122-7131. Disponible en http://tip.iatext.ulpgc.es
-*/
-
 import java.util.*;
 
 
@@ -61,7 +53,6 @@ public class Sibilificador {
     public int BienTildada(ArrayList silabeo, String palabra){
         int numSilabas = (int)silabeo.get(0);
 	// Comprueba si hay má de una tilde en la palabra
-        //palabra.toLowerCase().Count<char>(TieneTilde) > 1
 	if (contarTildes(palabra.toLowerCase()) > 1) return 7;
             int posTónica =  (int)silabeo.get(numSilabas + 1);
 	if (numSilabas - posTónica < 2){ // Si la palabra no es esdrújula
@@ -89,24 +80,10 @@ public class Sibilificador {
 	return 0; // La palabra está correctamente tildada
     }
 
-		/*********************************************************/
-		/*********************************************************/
-		/**             OPERACIONES PRIVADAS                    **/
-		/*********************************************************/
-		/*********************************************************/
-
 		/// Determina si un caracter está tildado.
     private boolean TieneTilde(char c){
         return "áéíóú".indexOf(c) != -1;
     }
-    /*private boolean TieneTilde(char c){
-	if("áéíóú".indexOf(c) != -1){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }*/
 
     /// Determina si hay que llamar a PosicionSilabas (si palabra
     /// es la misma que la última consultada, no hace falta)
