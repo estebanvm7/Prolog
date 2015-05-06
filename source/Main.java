@@ -15,8 +15,8 @@ public class Main {
 	//se crean los string que almacenan la dirreción de los archivos
         String Regla5 = "Reglas5.pl";
         String Regla7 = "Reglas7.pl";
-	String verbos = "verbos.txt";
-	String articulos = "articulos.txt";
+        String verbos = "verbos.txt";
+        String articulos = "articulos.txt";
         String adejtivos = "adjetivos.txt";
         String pronombres = "pronombres.txt";
         String sustantivos = "sustantivos.txt";
