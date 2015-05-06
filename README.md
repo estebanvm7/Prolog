@@ -32,11 +32,11 @@ o una luciérnaga? </br>
 > Exportar la libreria de swi-prolog<br>
 Computadoras de 32bit
 ```bash
-$vexport LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/i386"
+$ export LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/i386"
 ```
 Computadoras de 64bits
 ```bash
-$vexport LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/amd64"
+$ export LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/amd64"
 ```
 
 Compilar y ejectura el programa
