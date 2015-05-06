@@ -44,7 +44,7 @@ public class Main {
             list.add(sustantivos);list.add(verbos);
             try (PrintWriter writer = new PrintWriter("main.pl", "UTF-8"); ) {
                 writer.println(oracion1+"\n"+oracion2+"\n"+oracion3+"\n"+oracion4);
-                for (String i: list){
+                for (String i: list) {
                     int cantLineas = file.numberOfLines(i);
                     for (int j = 0; j < 5; j++){
                         String linea = file.getLine(i, random.nextInt(cantLineas)+1);
