@@ -17,40 +17,40 @@ public class Sibilificador {
 	posiciones = new ArrayList ();
     }
     
-   / **
+   /**
     * Devuleve un estructura de array con las posiciones de inicio de las silabas de cada palabra.
     * El argumento es la palabra que se va a evaluar.
     * Se llama al metodo calcular para realizar una evaluacion de la palabra ingresada.
     * Se retornara el array de posiciones, que ha sido evaluado en otros metodos del codigo.
     * param   la palabra que se va a evaluar
     * return  un array de la palabra con sus respectivas posiciones, separadas por sus silabas
-    * /
+    */
     public ArrayList PosicionSilabas (String palabra){
 	Calcular (palabra);
 	return posiciones;
     }
    
-   / **
+   /**
     * Devuleve el numero de silabas que tiene la palabra.
     * El argumento es la palabra que se va a evaluar.
     * Se llama al metodo calcular para realizar una evaluacion de la palabra ingresada.
     * Se retornara el numero de silabas.
     * param   la palabra que se va a evaluar
     * return  la cantidad numerica entera de silabas en la palabra
-    * /
+    */
     public int NumeroSilabas (String palabra){
 	Calcular (palabra);
 	return numSil;
     }
    
-   / **
+   /**
     * Devuleve la posicion de la palabra en la cual se encuentra la silaba tonica.
     * El argumento es la palabra que se va a evaluar.
     * Se llama al metodo calcular para realizar una evaluacion de la palabra ingresada.
     * Se retornara el numero de la posicion de la palabra que contiene la silaba tonica.
     * param   la palabra que se va a evaluar
     * return  la posicion dentro de la palabra
-    * /
+    */
     public int SilabaTonica (String palabra){
 	Calcular (palabra);
 	return tonica;
@@ -66,7 +66,7 @@ public class Sibilificador {
         }
         return contador;
     }
-    / **
+    /**
     * Determina si la palabra evaluada esta correctamente tildada..
     * El argumento es la palabra que se va a evaluar.
     * Se retornara un numero que tiene los siguientes significado:
@@ -77,7 +77,7 @@ public class Sibilificador {
     * param   la palabra que se va a evaluar
     * return  un numero que indica si la palabra esta bien tildada, si posee varias tildes, 
     * si es aguda o si es llana
-    * /
+    */
     public int BienTildada(ArrayList silabeo, String palabra){
         int numSilabas = (int)silabeo.get(0);
 	// Comprueba si hay má de una tilde en la palabra
