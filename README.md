@@ -29,10 +29,18 @@ o una luciérnaga? </br>
 
 > se requiere que todos los archivos se encuentren en la misma carpeta
 
-se ejecutan los siguentes comandos
-```sh
-export LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/i386"
+Exporta la libreria de swi-prolog
 
+para computadoras de 32bit
+```bash
+$vexport LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/i386"
+```
+para computadoras de 64bits
+```bash
+$vexport LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/amd64"
+```
+
+```
 #Compila todos los .java
 $ javac -cp /usr/lib/swi-prolog/lib/jpl.jar *.java
 
