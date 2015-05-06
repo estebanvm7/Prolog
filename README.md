@@ -27,7 +27,30 @@ o una luciérnaga? </br>
 ¿Cómo funciona el programa?
 ---------------------------
 
-Falta por hacer
+> se requiere que todos los archivos se encuentren en la misma carpeta
+
+se ejecutan los siguentes comandos
+```sh
+export LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/i386"
+
+#Compila todos los .java
+$ javac -cp /usr/lib/swi-prolog/lib/jpl.jar *.java
+
+#Ejecuta el programa
+$ java -cp /usr/lib/swi-prolog/lib/jpl.jar:. Main
+```
+
+Pedir un nuevo haiku
+
+```bash
+$ ;
+```
+
+Termina el programa
+
+```bash
+$ .
+```
 
 Puntos Extra
 ------------
