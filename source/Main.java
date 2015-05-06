@@ -1,6 +1,6 @@
 import java.io.*;
-import static java.lang.Math.random;
 import java.util.*;
+import static java.lang.Math.random;
 
 public class Main {
 	public static void main(String[] args) {
