@@ -22,7 +22,32 @@ public class Main {
 
         while (bandera){
 
+<<<<<<< HEAD
 			String siguiente= scan.nextLine();
+=======
+            
+            List <String> list = new ArrayList<String>();
+            list.add(articulos);list.add(adejtivos);list.add(preposiciones);list.add(pronombres);
+            list.add(sustantivos);list.add(verbos);
+            try (PrintWriter writer = new PrintWriter("main.pl", "UTF-8"); ) {
+                writer.println(oracion1+"\n"+oracion2+"\n"+oracion3+"\n"+oracion4);
+                for (String i: list) {
+                    int cantLineas = file.numberOfLines(i);
+                    for (int j = 0; j < 5; j++){
+                        String linea = file.getLine(i, random.nextInt(cantLineas)+1);
+                        //System.out.println(file.textToPl(i, linea));
+                        writer.println(file.textToPl(i, linea));
+                        //System.out.println(linea);      la f s
+                        //file.txt_to_pl(linea,"main");
+                    }
+                }
+                writer.flush();
+                writer.close();
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+           String siguiente= scan.nextLine();
+>>>>>>> 919b5229a3241d75382bbedbfc4f7c4d79598e93
             String haiku = "";
             if (siguiente.equals(";")){
 				int ran1 = random.nextInt(file.numberOfLines(Regla5))+1;
