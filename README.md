@@ -39,7 +39,7 @@ para computadoras de 64bits
 ```bash
 $vexport LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/amd64"
 ```
-
+Compilar y ejectura el programa
 ```
 #Compila todos los .java
 $ javac -cp /usr/lib/swi-prolog/lib/jpl.jar *.java
