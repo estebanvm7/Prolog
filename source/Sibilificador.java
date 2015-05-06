@@ -3,44 +3,60 @@ import java.util.*;
 
 public class Sibilificador {
     private final int MAX_SILABAS = 20;
-    private int lonPal;		      // Longitud de la palabra
-    private int numSil;           // Número de silabas de la palabra
-    private int tonica;           // Posición de la silaba tónica (empieza en 1)
-    private boolean encTonica;       // Indica si se ha encontrado la silaba tónica
-    private int letraTildada;     // Posición de la letra tildda, si la hay 
-    private ArrayList posiciones; // Posiciones de inicio de las silabas
-    private String ultPal;        // Última palabra tratada, se guarda para
-						      // no repetir el proceso si se pide la misma
+    private int lonPal;		      	// Longitud de la palabra
+    private int numSil;			// Número de silabas de la palabra
+    private int tonica;			// Posición de la silaba tónica (empieza en 1)
+    private boolean encTonica;		// Indica si se ha encontrado la silaba tónica
+    private int letraTildada;		// Posición de la letra tildda, si la hay 
+    private ArrayList posiciones;	// Posiciones de inicio de las silabas
+    private String ultPal;		// Última palabra tratada, se guarda para
+					// no repetir el proceso si se pide la misma
 
     public void SeparadorDeSilabas(){
 	ultPal = ""; 
 	posiciones = new ArrayList ();
     }
- 
-    /// Devuelve un array con las posiciones de inicio de las sílabas de palabra   
+    
+   / **
+    * Devuleve un estructura de array con las posiciones de inicio de las silabas de cada palabra.
+    * El argumento es la palabra que se va a evaluar.
+    * Se llama al metodo calcular para realizar una evaluacion de la palabra ingresada.
+    * Se retornara el array de posiciones, que ha sido evaluado en otros metodos del codigo.
+    * param   la palabra que se va a evaluar
+    * return  un array de la palabra con sus respectivas posiciones, separadas por sus silabas
+    * /
     public ArrayList PosicionSilabas (String palabra){
 	Calcular (palabra);
 	return posiciones;
     }
    
-    /// Devuelve el número de silabas de palabra
+   / **
+    * Devuleve el numero de silabas que tiene la palabra.
+    * El argumento es la palabra que se va a evaluar.
+    * Se llama al metodo calcular para realizar una evaluacion de la palabra ingresada.
+    * Se retornara el numero de silabas.
+    * param   la palabra que se va a evaluar
+    * return  la cantidad numerica entera de silabas en la palabra
+    * /
     public int NumeroSilabas (String palabra){
 	Calcular (palabra);
 	return numSil;
     }
    
-    /// Devuelve la posición de la sílaba tónica de palabra
+   / **
+    * Devuleve la posicion de la palabra en la cual se encuentra la silaba tonica.
+    * El argumento es la palabra que se va a evaluar.
+    * Se llama al metodo calcular para realizar una evaluacion de la palabra ingresada.
+    * Se retornara el numero de la posicion de la palabra que contiene la silaba tonica.
+    * param   la palabra que se va a evaluar
+    * return  la posicion dentro de la palabra
+    * /
     public int SilabaTonica (String palabra){
 	Calcular (palabra);
 	return tonica;
     }
     
-    /// Determina si una palabra está correctamente tildada
-    /// <returns>
-    /// 0 - bien tildada
-    /// 7 - varias tildes en la palabra
-    /// 8 - aguda mal tildada
-    /// 9 - llana mal tildada
+    
     public int contarTildes(String palabra){
         int contador = 0;
         for(int i = 0; i < palabra.length(); i++){
@@ -50,6 +66,18 @@ public class Sibilificador {
         }
         return contador;
     }
+    / **
+    * Determina si la palabra evaluada esta correctamente tildada..
+    * El argumento es la palabra que se va a evaluar.
+    * Se retornara un numero que tiene los siguientes significado:
+    * 0 - bien tildada
+    * 7 - varias tildes en la palabra
+    * 8 - aguda mal tildada
+    * 9 - llana mal tildada
+    * param   la palabra que se va a evaluar
+    * return  un numero que indica si la palabra esta bien tildada, si posee varias tildes, 
+    * si es aguda o si es llana
+    * /
     public int BienTildada(ArrayList silabeo, String palabra){
         int numSilabas = (int)silabeo.get(0);
 	// Comprueba si hay má de una tilde en la palabra
