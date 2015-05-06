@@ -8,9 +8,9 @@ public class Main {
 		
 	//se crean los objetos
 	Random random = new Random();
-        FileManager file = new FileManager();
+	FileManager file = new FileManager();
 	Scanner scan = new Scanner(System.in);
-        GeneradorHaikus gen = new GeneradorHaikus();
+	GeneradorHaikus gen = new GeneradorHaikus();
 		
 	//se crean los string que almacenan la dirreción de los archivos
         String Regla5 = "Reglas5.pl";
