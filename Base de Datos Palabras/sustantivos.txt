@@ -87,7 +87,7 @@ valeria f s
 varilla m s
 wanda f s
 wikipedia m s
-xenofobia m s
+xenofobia f s
 yalta m s
 yazmín f s
 zacarias m s
