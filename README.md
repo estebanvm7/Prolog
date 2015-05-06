@@ -27,10 +27,9 @@ o una luciérnaga? </br>
 ¿Cómo funciona el programa?
 ---------------------------
 
-> se requiere que todos los archivos se encuentren en la misma carpeta
+**Se requiere que todos los archivos se encuentren en la misma carpeta**
 
-Exporta la libreria de swi-prolog
-
+> Exporta la libreria de swi-prolog
 para computadoras de 32bit
 ```bash
 $vexport LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/i386"
@@ -39,6 +38,7 @@ para computadoras de 64bits
 ```bash
 $vexport LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/amd64"
 ```
+
 Compilar y ejectura el programa
 ```
 #Compila todos los .java
