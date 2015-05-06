@@ -39,23 +39,22 @@ Computadoras de 64bits
 $ export LD_LIBRARY_PATH="/usr/lib/swi-prolog/lib/amd64"
 ```
 
-Compilar y ejectura el programa
+Compilar el programa
 ```
-#Compila todos los .java
 $ javac -cp /usr/lib/swi-prolog/lib/jpl.jar *.java
+```
 
-#Ejecuta el programa
+Ejecuta el programa
+```
 $ java -cp /usr/lib/swi-prolog/lib/jpl.jar:. Main
 ```
 
 Pedir un nuevo haiku
-
 ```bash
 $ ;
 ```
 
 Termina el programa
-
 ```bash
 $ .
 ```
