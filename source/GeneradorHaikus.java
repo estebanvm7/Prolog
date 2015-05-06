@@ -6,24 +6,30 @@ import jpl.Query;
 
 public class GeneradorHaikus {
 
-	
+	/*
+	 * 
+	 * 
+	 */ 
 	public String getHaiku(String file, String comando){
 		Query q;
 	    q = new Query("consult('"+file+"')");
-	    /*System.out.println(*/q.hasSolution()/*)*/;
+	    q.hasSolution();
 	    q = new Query(comando+"(O,[]).");
-	    /*System.out.println(*/q.hasSolution()/*)*/;
+	    q.hasSolution();
 	    String res = "";
 	    Hashtable[] list;
 	    list = q.allSolutions();
 	    int size = list.length;
-            System.out.println(size);
+        System.out.println("Total de haikus encontrados: "+size);
+        if (size == 0){
+			return "No se encontraron haikus para esta combinación";
+		}
 	    Random random = new Random();
 	    int ran = random.nextInt(size)+1;
+	    System.out.println("Tomamos el haiku número: "+ran);
 	    while (q.hasMoreElements()) {	
 	    	if (ran == size){
 	    		res = q.nextElement().toString();
-	    		//System.out.println(q.nextElement());
 	    	}
 	    	ran++;
 	    	q.nextElement();
@@ -38,16 +44,9 @@ public class GeneradorHaikus {
 	    res = res.replace(',', '\0');
 	    res = res.replace('}', '\0');
 	    res = res.replace('{', '\0');
+	     res = res.replace('#', '\n');
 	    res = res.replace((char)39, '\0');
 	    q.close();
 	    return res;
 	}
-	
-	
-	/*public static void main(String[] args) {
-		GeneradorHaikus gen = new GeneradorHaikus();
-		//System.out.println(gen.getOracion("01-03.pl"));
-		gen.printHaiku("pruebas.pl", "01-07.pl", "01-03.pl");
-	}*/
-
 }
