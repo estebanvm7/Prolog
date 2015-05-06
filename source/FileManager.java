@@ -3,10 +3,13 @@ import java.util.*;
 
 public class FileManager {
 	
-	/*
-	 * Esta funcion nos indica cuantas lineas tiene un archivo.
-	 * Entradas: ruta del archivo.
-	 * Salidas: numero de lineas de un archivo.
+	/**
+	 * Retorna el numero de lineas de un archivo en especifico. Podria verse como un 
+	 * length de file con numero de lineas como elemento a contar.
+	 * En caso de no poder abrir un archivo, se denota como length = 0 por defecto.
+	 * @param	ruta de ubicacion del archivo a analizar
+	 * @return      un numero con la cantidad de lineas de un archivo.
+	 * @see		FileReader, BufferedReader, IOException.
 	 */
 	public int numberOfLines(String root){
 		FileReader file = null;
@@ -32,9 +35,12 @@ public class FileManager {
 	
 
 	/*
-	 * Esta función lee un archivo y devuelve una linea en especifico de ese archivo
-	 * Entrada: la ruta del archivo y el numero de linea que quiero obtener.
-	 * Salida: el string de la linea que le solicité
+	 * Retorna una linea en especifico de un archivo. Podria verse como un find(int n) sobre el archivo
+	 * donde el valor de retorno seria una linea en especifico de un archivo.
+	 * En caso de que se le de un valor fuera del rango del archivo, retornaria un error.
+	 * @param 	ruta del archivo a analizar.
+	 * @param 	entero con el nuemero de linea a consultar.
+	 * @see 	FileReader, BufferedReader, IOException.
 	 */
 	
 	public String getLine(String root, int line){
@@ -72,54 +78,17 @@ public class FileManager {
 		
 	}
 	
-	/*
-	 * Funcion que me permite tomar un archivo .txt y pasarlo a sentencias
-	 * de prolog.
-	 * Entradas: un archivo .txt
-	 * Salidas: un archivo .pl
+	/**
+	 * Retorna un atomo para nuestro programa en prolog, dependiendo de las entradas que obtenga la funcion.
+	 * en este caso tomamos la ruta y se toma como header del atomo y mediante el resto de sus datos, crea asi
+	 * sus respectivas reglas.
+	 * En este caso se toma la ruta, se abre el archivo y se elige una linea la cual convertiremos en
+	 * atomo y convertimos su informacion en un atomo.
+	 * @param 	hilera con la ruta donde se encuentra el archivo original.
+	 * @param 	linea a actualizar a atomo
+	 * @return 	hilera correspondiente al atomo de prolog
+	 * @see 	String[]
 	 */
-	public void txt_to_pl(String origin, String destiny){
-		FileReader file = null;
-		BufferedReader reader = null;
-		PrintWriter writer = null;
-		String temp = "";
-		int syllable = 0;
-		try {
-			file = new FileReader(origin);
-			reader = new BufferedReader(file);
-			writer = new PrintWriter(destiny+".pl", "UTF-8");
-			temp = reader.readLine();
-			Sibilificador syll = new Sibilificador();
-			syll.SeparadorDeSilabas();
-			while(temp != null){
-				
-				if(origin.contains("verbos")){
-					String[] spliter = new String[1];
-					spliter = temp.split(" ");
-					syllable = syll.NumeroSilabas(spliter[0]);
-					writer.println(destiny+"(M,T) --> ["+spliter[0]+"], {M is "+syllable+"}"+ ", {T="+spliter[1]+"}.");     
-				}
-				else if(origin.contains("preposiciones")){
-					syllable = syll.NumeroSilabas(temp);
-					writer.println(destiny+"(M) --> ["+temp+"], {M is "+syllable+"}."); 
-				}
-				else{   
-					String[] spliter = new String[2];
-					spliter = temp.split(" ");
-					syllable = syll.NumeroSilabas(spliter[0]);
-					writer.println(destiny+"(G,M,T) --> ["+spliter[0]+"], {G="+spliter[1]+"}, {M is "+syllable+"}"+ ", {T="+spliter[2]+"}."); 
-				}
-				temp = reader.readLine();
-			}
-			file.close();
-			reader.close();
-			writer.flush();
-			writer.close();
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
-		}
-	}
-	
         
         public String textToPl(String root, String line){
             String res = "";
@@ -146,39 +115,4 @@ public class FileManager {
 		return root+"(G,M,T) --> ["+spliter[0]+"], {G="+spliter[1]+"}, {M is "+syllable+"}"+ ", {T="+spliter[2]+"}."; 
             }
         }
-	/*
-	 * funcion que toma varios archivos y los une en uno solo
-	 */
-	public void createWholePl(List<FileReader> list, String name){
-		String temp = "";
-		PrintWriter writer = null;
-		BufferedReader reader = null;
-		try{
-			writer = new PrintWriter(name+".pl", "UTF-8");
-			for (FileReader i: list){
-				reader = new BufferedReader(i);
-				temp = reader.readLine();
-				while(temp != null){
-					writer.println(temp);
-					temp = reader.readLine();
-				}
-				i.close();
-				
-			}
-			writer.flush();
-			writer.close();
-		}catch (IOException e){
-			System.out.println(e.getMessage());
-		}
-	}
-	
-	/*public static void main(String[] args){
-		FileManager file = new FileManager();
-		file.txt_to_pl("verbos.txt", "verbo");
-		file.txt_to_pl("articulos.txt", "articulos");
-		file.txt_to_pl("pronombres.txt", "pronombres");
-		file.txt_to_pl("sustantivos.txt", "sustantivos");
-		file.txt_to_pl("adjetivos.txt", "adjetivos");
-		file.txt_to_pl("preposiciones.txt", "preposiciones");
-	}*/
 }
